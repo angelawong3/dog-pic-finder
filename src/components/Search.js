@@ -50,13 +50,7 @@ const Search = (props) => {
           }
           /images/random
         </span>
-        <button
-          onClick={(e) => {
-            setImageUrl(e.target.value);
-          }}
-        >
-          Fetch!
-        </button>
+        <button onClick={() => fetchBreed(currentBreed)}>Fetch!</button>
       </div>
       <img alt={currentBreed} src={imageUrl} />
     </>
